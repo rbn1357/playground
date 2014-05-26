@@ -2,12 +2,24 @@
   var app = angular.module('store', []);
 
   app.controller('StoreController', function(){
-    this.product = gem;
+    this.products = gems;
   });
 
-  var gem = {
-    name: 'Dodecahedron',
-    price: 2.95,
-    description: 'Coolest Gem Evar'
-  };
+  var gems = [
+    {
+        name: 'Dodecahedron',
+        price: 2.95,
+        description: 'Coolest Gem Evar',
+        canPurchase: false,
+        soldOut: true
+    },
+    {
+        name: 'Ryan\'s Gem',
+        price: 102.95,
+        description: '1st Coolest Gem Evar',
+        canPurchase: true,
+        soldOut: false
+    }
+  ]; 
+
 })();
