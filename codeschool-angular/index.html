@@ -11,9 +11,10 @@
     <img ng-src="{{product.images[0].full}}">
     <section>
       <ul class="nav nav-pills">
-        <li><a href=""></a>Description</li>
-        <li><a href=""></a>Specifications</li>
-        <li><a href=""></a>Reviews</li>
+        <li><a href="" ng-click="tab = 1">Description</a></li>
+        <li><a href="" ng-click="tab = 2">Specifications</a></li>
+        <li><a href="" ng-click="tab = 3">Reviews</a></li>
+        {{tab}}
       </ul>
     </section>
     <button ng-show="product.canPurchase">Add to Cart</button>
