@@ -4,12 +4,18 @@
   <title>Codeschool Angular App</title>
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
-<body ng-controller="StoreController as store">
-  <div ng-repeat="product in store.products">
-    <h1> {{product.name }} </h1>
-    <h2> {{product.price | currency}} </h2>
-    <p> {{product.description}} </p>
+<body class="container" ng-controller="StoreController as store">
+  <div class="col-lg-4" ng-repeat="product in store.products">
+    <h1 class="pull-left"> {{product.name }} </h1>
+    <h2 class="pull-right"> {{product.price | currency}} </h2>
     <img ng-src="{{product.images[0].full}}">
+    <section>
+      <ul class="nav nav-pills">
+        <li><a href=""></a>Description</li>
+        <li><a href=""></a>Specifications</li>
+        <li><a href=""></a>Reviews</li>
+      </ul>
+    </section>
     <button ng-show="product.canPurchase">Add to Cart</button>
   </div>
   <script type="text/javascript" src="angular.min.js"></script>
