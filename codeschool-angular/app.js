@@ -28,6 +28,13 @@
           {
           full: 'ruby-gem.png'
           }
+        ],
+        reviews: [
+          {
+            stars: 5,
+            body: "I just love this gem!",
+            author: "joe@thomas.com"
+          }
         ]
     },
     {
@@ -39,6 +46,13 @@
         images: [
           {
           full: 'ruby-gem.png'
+          }
+        ],
+        reviews: [
+          {
+            stars: 2,
+            body: "It's ok",
+            author: "joeschmo@smith.com"
           }
         ]
     }
