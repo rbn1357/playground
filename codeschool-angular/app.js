@@ -23,7 +23,12 @@
         price: 102.95,
         description: '1st Coolest Gem Evar',
         canPurchase: true,
-        soldOut: false
+        soldOut: false,
+        images: [
+          {
+          full: 'ruby-gem.png'
+          }
+        ]
     }
   ]; 
 
