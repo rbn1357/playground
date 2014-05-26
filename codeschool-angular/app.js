@@ -11,7 +11,12 @@
         price: 2.9,
         description: 'Coolest Gem Evar',
         canPurchase: false,
-        soldOut: true
+        soldOut: true,
+        images: [
+          {
+          full: 'ruby-gem.png'
+          }
+        ]
     },
     {
         name: 'Ryan\'s Gem',
