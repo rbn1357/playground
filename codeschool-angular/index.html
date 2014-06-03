@@ -6,8 +6,10 @@
 </head>
 <body class="container" ng-controller="StoreController as store">
   <div class="col-lg-4" ng-repeat="product in store.products">
-    <h1 class="pull-left"> {{product.name }} </h1>
-    <h2 class="pull-right"> {{product.price | currency}} </h2>
+    <h3>
+      {{product.name}}
+      <em class="pull-right">{{product.price | currency}}</em>
+    </h3>
     <img ng-src="{{product.images[0].full}}">
     <section ng-controller="PanelController as panel">
       <ul class="nav nav-pills">
