@@ -1,6 +1,13 @@
 (function() {
   var app = angular.module('store', []);
 
+  app.directive('productTitle', function(){
+    return {
+      restrict: 'E',
+      templateUrl: 'product-title.html'
+    };
+  });
+
   app.controller('StoreController', function(){
     this.products = gems;
   });
