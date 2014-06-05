@@ -1,4 +1,4 @@
-module Version
+module Journal
   class V1 < Grape::API
     format :json
     
