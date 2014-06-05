@@ -1,5 +1,5 @@
 require 'api'
 
 Rails.application.routes.draw do
-  mount API => "/"
+  mount Journal::API => "/"
 end
