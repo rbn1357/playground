@@ -1,28 +1,9 @@
-== README
+This is my first crack at a Angular + Rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Based on Ryan Bates' rails cast: http://railscasts.com/episodes/405-angularjs
 
-Things you may want to cover:
+Raffler app
+  User can add a name
+  User can randomly select a winner
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+All actions are saved in the database.
