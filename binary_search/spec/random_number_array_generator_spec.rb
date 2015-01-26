@@ -13,5 +13,10 @@ RSpec.describe RandomNumberArrayGenerator do
       invalid_nums = result.select { |num| num > max_threshold }
       expect(invalid_nums.count).to eq(0)
     end
+
+    it 'returns a sorted array of unique numbers' do
+      result = described_class.call(5, max_threshold)
+      expect(result).to eq(result.sort.uniq)
+    end
   end
 end

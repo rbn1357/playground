@@ -3,6 +3,6 @@ class RandomNumberArrayGenerator
     arr = []
     arr.tap do
       array_size.times { arr << rand(1..max_threshold) }
-    end
+    end.uniq.sort
   end
 end
