@@ -13,11 +13,8 @@ BinarySearch = Struct.new(:search_num) do
     until low > high
       mid = (low + high) / 2
 
-      if search_num > random_arr[mid]
-        low = mid + 1
-      else
-        high = mid - 1
-      end
+      low = mid + 1 if search_num >= random_arr[mid]
+      high = mid - 1 if search_num <= random_arr[mid]
     end
 
     random_arr[mid] == search_num ? mid : -1
